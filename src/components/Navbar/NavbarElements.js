@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
 
-background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+background: #fff;
 height: 80px;
 margin-top: -80px;
 display: flex;
@@ -18,6 +18,7 @@ z-index: 10;
 
 @media screen and (max-width:960px){
     transition: 0.8s all ease;
+    background: #000;
 }
 `;
 
@@ -32,7 +33,7 @@ max-width:1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-color: #fff;
+color: #000;
 justify-self:flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -42,13 +43,17 @@ margin-left: 24px;
 font-weight:bold;
 text-decoration: none;
 
+@media screen and (max-width:960px){
+    color: #fff;
+}
+
 
 `;
 
 export const MobileIcon = styled.div`
 
 display: none;
-@media screen and (max-width: 768px){
+@media screen and (max-width: 960px){
     display:block;
     position: absolute;
     top:0;
@@ -57,6 +62,7 @@ display: none;
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    
 
 }
 
@@ -70,33 +76,131 @@ text-align:center;
 margin-right: -22px;
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 960px){
     display: none;
 }
 `;
 
 export const NavItem = styled.li`
 height:80px;
+
+
+
 `;
 
 export const NavLinks = styled(LinkS)`
-color: #fff;
+align-items: center;
 display: flex;
-align-items:center;
-text-decoration: none;
-padding: 0 1rem;
+flex-flow: row nowrap;
 height: 100%;
-cursor: pointer;
+justify-content: flex-end;
+margin: 0px;
+padding: 0px;
+position: relative;
+margin-right:auto;
+margin-left:25px;
 
-&:hover{
+
+
+
     
-    transform: scale(1.1);
+    span{
+        color: #000;
+        font-size: 13px;
+        letter-spacing: 1.42px;
+        line-height: 1.08;
+        padding:2px 0px;
+        white-space:nowrap;
+        position: relative;
+        cursor: pointer;
+    
+&:before{
+    background-color: #000;
+    border-radius:0px 0px 4px 4px;
+    bottom: -6px;
+    content:'';
+    height:2px;
+    left:0px;
+    opacity: 0;
+    position: absolute;
+    right:0px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    visibility: hidden;
+    width: auto;
 }
 
-&.active {
-border-bottom: 3px solid #01bf71;
+}
+&:hover {
+    span:before {
+        transform:scaleX(1);
+        visibility:visible;
+        opacity:1 !important;
+    
+    
+    }
 }
 `;
+
+export const MenuLink = styled(LinkS)`
+
+align-items: center;
+display: flex;
+flex-flow: row nowrap;
+height: 100%;
+justify-content: flex-end;
+margin: 0px;
+padding: 0px;
+position: relative;
+margin-right:auto;
+margin-left:25px;
+text-decoration: none;
+
+
+
+    
+    span{
+        color: #000;
+        font-size: 13px;
+        letter-spacing: 1.42px;
+        line-height: 1.08;
+        padding:2px 0px;
+        white-space:nowrap;
+        position: relative;
+        cursor: pointer;
+    
+&:before{
+    background-color: #000;
+    border-radius:0px 0px 4px 4px;
+    bottom: -6px;
+    content:'';
+    height:2px;
+    left:0px;
+    opacity: 0;
+    position: absolute;
+    right:0px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    visibility: hidden;
+    width: auto;
+}
+
+}
+&:hover {
+    span:before {
+        transform:scaleX(1);
+        visibility:visible;
+        opacity:1 !important;
+    
+    
+    }
+}
+`;
+
+
+
 
 export const NavBtn = styled.nav`
 display: flex;
@@ -125,5 +229,9 @@ text-decoration: none;
     background: #fff;
     color: #010606;
     
+}
+
+@media screen and (max-width: 960px){
+  display:none;
 }
 `;

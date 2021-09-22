@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, MenuLink } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
 
@@ -45,31 +45,15 @@ const Navbar = ({ toggle }) => {
                                     }
 
                                 >
-                                    About us
+                                    <span>About Us</span>
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="classes"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact='true'
-                                    offset={-80
-                                    }>
-                                    Menu
-                                </NavLinks>
+                                <MenuLink to="menu"><span>Menu</span></MenuLink>
+
+
                             </NavItem>
-                            <NavItem>
-                                <NavLinks to="locations"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact='true'
-                                    offset={-80
-                                    }>
-                                    Locations
-                                </NavLinks>
-                            </NavItem>
+
                             <NavItem>
                                 <NavLinks to="contact"
                                     smooth={true}
@@ -78,12 +62,12 @@ const Navbar = ({ toggle }) => {
                                     exact='true'
                                     offset={-80
                                     }>
-                                    Contact
+                                    <span>Contact</span>
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="/signin">Bookings</NavBtnLink>
+                            <NavBtnLink to={"/signin"}>Bookings</NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>

@@ -3,8 +3,8 @@ import { HeroContainer, HeroBg, } from './HeroElements';
 
 
 import ImgSlider from '../ImgSlider';
-import Insta from '../instagram';
 
+import './hero.css';
 
 const HeroSection = () => {
 
@@ -15,7 +15,8 @@ const HeroSection = () => {
             <HeroBg>
 
                 <ImgSlider />
-                <Insta />
+
+
             </HeroBg>
 
         </HeroContainer>

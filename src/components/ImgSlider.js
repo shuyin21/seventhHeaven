@@ -1,15 +1,14 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import cafe1 from '../images/cafe-1.jpg';
-import cafe2 from '../images/cafe-2.jpg';
-import cafe3 from '../images/cafe-3.jpg';
-import cafe4 from '../images/cafe-4.jpg';
-import cafe5 from '../images/cafe-5.jpg';
-import cafe6 from '../images/cafe-6.jpg';
+import pancake from '../images/pancake.jpg';
+import caro1 from '../images/caro1.jpg';
+import dessert from '../images/dessert.jpg';
+
+
 
 
 
@@ -20,48 +19,39 @@ const ImgSlider = (props) => {
         infinite: true,
         speed: 5000,
         slidesToShow: 1,
-        cssEase: 'ease',
+        cssEase: 'ease-in-out',
         fade: true,
         slidesToScroll: 1,
         autoplay: true,
+        loop: true,
+
 
     };
 
-    const [Mobile, setMobile] = useState(false);
-
-    function handleResize() {
-
-        if (window.innerWidth < 500) { setMobile(true) }
-        else { setMobile(false) }
-
-    }
-
-    useEffect(() => {
-        handleResize();
-
-        window.addEventListener('resize', handleResize)
-    })
-
-
-
-    const mobileCheck = Mobile;
     return (
         <Carousel {...settings} >
+
             <Wrap>
-                <a>
-                    <img src={mobileCheck ? cafe4 : cafe1} alt='' />
-                </a>
+                <ImgHolder>
+                    <Img src={dessert} />
+                </ImgHolder>
             </Wrap>
             <Wrap>
-                <a>
-                    <img src={mobileCheck ? cafe5 : cafe2} alt='' />
-                </a>
+                <ImgHolder>
+                    <Img src={caro1} />
+                </ImgHolder>
             </Wrap>
             <Wrap>
-                <a>
-                    <img src={mobileCheck ? cafe6 : cafe3} alt='' />
-                </a>
+                <ImgHolder>
+                    <Img src={pancake} />
+                </ImgHolder>
             </Wrap>
+
+
+
+
+
+
 
 
         </Carousel>
@@ -74,35 +64,23 @@ margin-top:0px;
 
 
 
+
 `;
 
 const Wrap = styled.div`
 border-radius: 4px;
 cursor: pointer;
 position: relative;
+margin-bottom: 20px;
 
 @media screen and(max-width: 500px){
-        img{
+        
             height:400px;
-            width:480px;
-        }}
+            width:100%;
+        }
 
-a{
-    border-radius: 4px;
-    box-shadow: rgb(0 0 0 /69%) 0px 26px 30px -10px, rgb(0 0 0  / 73%) 0px 16px 10px -10px;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    padding: 4px;
 
-    img {
-        width: 100%;
-        height:100%;
-        
-        
-    }
-   
-}
+
     &:hover {
         padding: 0;
         border: 4px solid rgba(249, 249, 249, 0.8);
@@ -111,4 +89,46 @@ a{
 
 `;
 
+
+
+const ImgHolder = styled.div`
+
+border-radius: 4px;
+    box-shadow: rgb(0 0 0 /69%) 0px 26px 30px -10px, rgb(0 0 0  / 73%) 0px 16px 10px -10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 4px;
+`;
+
+const Img = styled.img`
+
+width: 100%;
+        height:100%;
+        object-fit: cover;
+
+        animation: imgscale 50s infinite ease-in-out;
+        
+
+        @keyframes imgscale{
+        0%{
+            transform: scale(1)
+        }  
+       
+        100%{
+            transform:scale(1.7);
+        }
+        }
+
+@media screen and (max-width:768px){
+    
+    height:370px;
+    animation: none;
+}
+
+`;
+
+
 export default ImgSlider;
+
+

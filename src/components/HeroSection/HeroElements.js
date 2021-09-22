@@ -8,16 +8,19 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 800px;
+height: 80vh;
 position: relative;
 z-index: 1;
 
-@media screen and (max-width:768px){
-    height: 650px;
+ @media screen and (max-width:768px){
+    height: 40vh;
     
     
 }
 
+@media screen and (max-width:1200px){
+    height:50vh;
+}
 :before {
     content:'';
     position: absolute;
