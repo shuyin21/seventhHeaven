@@ -19,7 +19,10 @@ z-index: 1;
 }
 
 @media screen and (max-width:1200px){
-    height:50vh;
+    height:40vh;
+}
+@media screen and (max-width:768px){
+    height:400px;
 }
 :before {
     content:'';

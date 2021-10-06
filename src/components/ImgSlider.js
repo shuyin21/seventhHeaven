@@ -75,7 +75,7 @@ margin-bottom: 20px;
 
 @media screen and(max-width: 500px){
         
-            height:400px;
+            height:100%;
             width:100%;
         }
 
@@ -99,6 +99,7 @@ border-radius: 4px;
     display: block;
     position: relative;
     padding: 4px;
+    height:100%;
 `;
 
 const Img = styled.img`
@@ -122,7 +123,7 @@ width: 100%;
 
 @media screen and (max-width:768px){
     
-    height:370px;
+    height:320px;
     animation: none;
 }
 
