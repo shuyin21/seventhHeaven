@@ -12,19 +12,17 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink onClick={toggle} to='about'>
                         About us
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to='classes'>
-                        Classes
+                    <SidebarLink onClick={toggle} to='menu'>
+                        Menu
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to='locations'>
-                        Locations
-                    </SidebarLink>
+
                     <SidebarLink onClick={toggle} to='contact'>
                         Contact
                     </SidebarLink>
                 </SidebarMenu>
 
                 <SideBtnWrap>
-                    <SidebarRoute to='/signin'>Free Trials</SidebarRoute>
+                    <SidebarRoute to='/signin'>Bookings</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

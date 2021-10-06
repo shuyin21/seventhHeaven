@@ -13,7 +13,7 @@ const Menu = (props) => {
     const [dessertActive, setDessertActive] = useState(false);
     const [activeValue, setActiveValue] = useState('starter');
 
-    console.log(activeValue);
+
     function activateStarter() {
         setStarterActive(true);
         setMainActive(false);

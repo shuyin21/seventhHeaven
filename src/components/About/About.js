@@ -35,7 +35,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #fff;
-margin-top: 100px;
+
 `;
 
 
@@ -44,10 +44,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 20px 100px;
+margin: 100px 100px 20px;
 
 @media screen and (max-width:768px){
-    margin: 20px;
+    margin:100px 20px 20px;
 }
 `;
 
