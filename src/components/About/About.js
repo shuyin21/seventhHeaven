@@ -35,7 +35,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #fff;
-margin-top: 50px;
+margin-top: 100px;
 `;
 
 
