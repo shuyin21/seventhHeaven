@@ -38,9 +38,15 @@ const Menu = (props) => {
     var BgColorMain = {};
     var BgColorStarter = {};
     var BgColorDessert = {};
-    { starterActive ? BgColorStarter = { backgroundColor: '#ffc600' } : BgColorStarter = { backgroundColor: '' } }
-    { mainActive ? BgColorMain = { backgroundColor: '#ffc600' } : BgColorMain = { backgroundColor: '' } }
-    { dessertActive ? BgColorDessert = { backgroundColor: '#ffc600' } : BgColorDessert = { backgroundColor: '' } }
+
+    if (starterActive) { BgColorStarter = { backgroundColor: '#ffc600' }; BgColorMain = { backgroundColor: '' }; BgColorDessert = { backgroundColor: '' } }
+    else if (mainActive) { BgColorMain = { backgroundColor: '#ffc600' }; BgColorStarter = { backgroundColor: '' }; BgColorDessert = { backgroundColor: '' } }
+    else if (dessertActive) { BgColorDessert = { backgroundColor: '#ffc600' }; BgColorStarter = { backgroundColor: '' }; BgColorMain = { backgroundColor: '' } }
+
+
+    // { starterActive ? BgColorStarter = { backgroundColor: '#ffc600' } : BgColorStarter = { backgroundColor: '' } }
+    // { mainActive ? BgColorMain = { backgroundColor: '#ffc600' } : BgColorMain = { backgroundColor: '' } }
+    // { dessertActive ? BgColorDessert = { backgroundColor: '#ffc600' } : BgColorDessert = { backgroundColor: '' } }
 
 
 
@@ -72,7 +78,7 @@ const Menu = (props) => {
                     <MenuItemWrapper>
 
                         {Data.filter(x => x.menus === activeValue).map((data) => (
-                            <> <MenuItemDiv key={data.id}>
+                            <MenuItemDiv key={data.id}>
                                 <MenuItem >
                                     <ItemHeader>{data.itemName}</ItemHeader>
                                     <ItemDots />
@@ -80,7 +86,7 @@ const Menu = (props) => {
                                 </MenuItem><ItemDescription>{data.itemDescription}</ItemDescription>
 
                             </MenuItemDiv>
-                            </>
+
 
                         ))}
 

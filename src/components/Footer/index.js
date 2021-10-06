@@ -66,9 +66,9 @@ const Footer = () => {
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to='/' onClick={toggleHome}>
-                                Action Theatre
+                                Seventh Heaven
                             </SocialLogo>
-                            <WebsiteRights>Action Theatre © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                            <WebsiteRights>Seventh Heaven © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                                     <FaFacebook />
@@ -76,7 +76,7 @@ const Footer = () => {
                                 <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
                                     <FaYoutube />
                                 </SocialIconLink>
-                                <SocialIconLink href='//twitter.com/OtgontsetsegNa3' target='_blank' aria-label='Twitter'>
+                                <SocialIconLink href='#' target='_blank' aria-label='Twitter'>
                                     <FaTwitter />
                                 </SocialIconLink>
                                 <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>

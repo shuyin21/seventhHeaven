@@ -8,7 +8,7 @@ const MenuButton = (props) => {
 
     return (
         <>
-            <MButton style={props.active} onClick={props.isActive} onClick={props.func}>{props.name}</MButton>
+            <MButton style={props.active} onChange={props.isActive} onClick={props.func}>{props.name}</MButton>
         </>
     )
 }
