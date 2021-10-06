@@ -59,7 +59,7 @@ const ImgSlider = (props) => {
 }
 const Carousel = styled(Slider)`
 margin-top:0px;
-
+margin-bottom: 50px;
 
 
 
