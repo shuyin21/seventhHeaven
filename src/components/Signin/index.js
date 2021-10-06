@@ -6,7 +6,7 @@ const SignIn = () => {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to='/'>Action Theatre</Icon>
+                    <Icon to='/'>Seventh Heaven</Icon>
                     <FormContent>
                         <Form action='#'>
                             <FormH1>Sign in to your account</FormH1>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuButton from '../components/Menu/MenuButton';
 
-import menuBg from '../images/pasta.jpg';
+import menuBg from '../images/pasta2.jpg';
 import { MenuData1, MenuData2, MenuData3, MenuData4, MenuData5, MenuData6, MenuData7, MenuData8, MenuData9, MenuData10, MenuData11, MenuData12 } from '../components/Menu/menuData';
 
 const Data = [MenuData1, MenuData2, MenuData3, MenuData4, MenuData5, MenuData6, MenuData7, MenuData8, MenuData9, MenuData10, MenuData11, MenuData12];
