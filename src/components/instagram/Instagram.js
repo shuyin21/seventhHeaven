@@ -8,7 +8,7 @@ const Instagram = () => {
         <>
             <InstaDiv >
                 <InstaWrapper>
-                    <InstagramFeed token={"IGQVJValk2VFRJS2V1a2RnRmQ3elloN2tfVEltcGwyTE9ySWdvVnVBel9SUTFKMlRPV1dtcHJ6MkdvSGVndXpaUFJSbUpVWTkxYUxydEttU1VFRFF5VGxfVkFIWjR0aERrd1RNUTdJekZAJMWl4SWlnRgZDZD"} counter="3" />
+                    <InstagramFeed token={"IGQVJValk2VFRJS2V1a2RnRmQ3elloN2tfVEltcGwyTE9ySWdvVnVBel9SUTFKMlRPV1dtcHJ6MkdvSGVndXpaUFJSbUpVWTkxYUxydEttU1VFRFF5VGxfVkFIWjR0aERrd1RNUTdJekZAJMWl4SWlnRgZDZD"} counter="6" />
                 </InstaWrapper>
             </InstaDiv>
         </>
