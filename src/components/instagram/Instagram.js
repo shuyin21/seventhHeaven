@@ -8,7 +8,7 @@ const Instagram = () => {
         <>
             <InstaDiv >
                 <InstaWrapper>
-                    <InstagramFeed token={"IGQVJXQWo3dU1pMk1Pa3k1WjJNZAnpfTUtsX3p6ZAHFldHlzV2wzZAlY0X2hxbUFtanh6c2ljUEktT0N0R0pYVmE0Tkp2WS1BZAVN6QWFOWjlGSTg0dzhpa0lhdmJ0MG1rREZAnWHNMcG5DQ25wQ0VSNU5YZAgZDZD"} counter="6" />
+                    <InstagramFeed token={process.env.TOKEN} counter="6" />
                 </InstaWrapper>
             </InstaDiv>
         </>
