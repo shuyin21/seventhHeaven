@@ -9,17 +9,15 @@ const About = () => {
                 <AboutWrapper>
                     <AboutHeader >Our Story</AboutHeader>
                     <AboutP>
-                        <p>Kula has been serving Londoners our famous Crepes, Waffles, Pancakes, Breakfast and
-                            Brunch for over 10 years from our cosy family-owned creperie in the heart of St Christopher’s
-                            place at Marylebone, London. We are open every day from morning to night with a menu which will take
-                            you around the globe with our legendary English breakfast and Indian Karak Chai to American pancakes, French crepes and Belgian waffles.</p>
+                        <p>Kula, a beloved family-owned creperie, has been delighting Londoners for over a decade with our renowned selection of Crepes, Waffles, Pancakes, Breakfast, and Brunch. Located in the heart of St. Christopher's Place in Marylebone, London, our cozy establishment welcomes you every day from morning until night.
+
+Our diverse menu takes you on a culinary journey around the world, offering a delightful fusion of flavors. From our iconic English breakfast and aromatic Indian Karak Chai to fluffy American pancakes, delicate French crepes, and indulgent Belgian waffles, Kula has something to satisfy every palate. Join us for a taste of global excellence right here in London.</p>
                     </AboutP>
                     <AboutButton to='/'>Order Online</AboutButton>
                     <AboutP>
-                        <p>Kula is more than just a creperie. Our menu caters for all tastes, all day. Barista coffee,
-                            sweet and savoury snacks, salads, Juices, Milkshakes, Smoothies and main courses sitting alongside our famous patisserie and ice cream counters.
-                            Ample seating outside provides fabulous views to Selfridges and across the piazza; so come along,
-                            grab a seat and unwind whilst enjoying something delicious from our daily menu.</p>
+                        <p>At Kula, we're not just a creperie; we're a culinary destination that caters to diverse tastes throughout the day. Our extensive menu encompasses a wide range of offerings, including barista coffee, delectable sweet and savory snacks, fresh salads, refreshing juices, indulgent milkshakes, healthy smoothies, and hearty main courses. All of this is complemented by our famous patisserie and ice cream counters.
+
+If you choose to dine with us, you can also take advantage of our ample outdoor seating, which provides stunning views of Selfridges and the charming piazza. So, whether you're looking to relax with a coffee, savor a delicious meal, or simply enjoy a sweet treat from our daily menu, Kula welcomes you to come, take a seat, and unwind in style.</p>
                     </AboutP>
                 </AboutWrapper>
             </AboutDiv>
@@ -54,8 +52,9 @@ margin: 100px 100px 20px;
 
 const AboutHeader = styled.h1`
 color: #000;
-font-size: 50px;
-
+font-size: 30px;
+text-transform:uppercase;
+font-family: 'Open Sans', sans-serif;
 `;
 
 const AboutP = styled.div`
@@ -80,6 +79,7 @@ border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
+margin:20px 0 50px 0;
 
 &:hover{
     transition: all 0.2 ease-in-out;
