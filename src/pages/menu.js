@@ -2,22 +2,20 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuButton from '../components/Menu/MenuButton';
 import menuBg from '../images/pasta2.jpg';
-import { MenuData1, MenuData2, MenuData3, MenuData4, MenuData5, MenuData6, MenuData7, MenuData8, MenuData9, MenuData10, MenuData11, MenuData12 } from '../components/Menu/menuData';
+import { MenuStarter,MenuMain, MenuDessert } from '../components/Menu/menuData';
 
-const Data = [MenuData1, MenuData2, MenuData3, MenuData4, MenuData5, MenuData6, MenuData7, MenuData8, MenuData9, MenuData10, MenuData11, MenuData12];
 const Menu = (props) => {
-
     const [starterActive, setStarterActive] = useState(true);
     const [mainActive, setMainActive] = useState(false);
     const [dessertActive, setDessertActive] = useState(false);
-    const [activeValue, setActiveValue] = useState('starter');
+    const [activeValue, setActiveValue] = useState(MenuStarter);
 
 
     function activateStarter() {
         setStarterActive(true);
         setMainActive(false);
         setDessertActive(false);
-        setActiveValue('starter');
+        setActiveValue(MenuStarter);
 
     }
 
@@ -25,14 +23,14 @@ const Menu = (props) => {
         setMainActive(true);
         setStarterActive(false);
         setDessertActive(false);
-        setActiveValue('main');
+        setActiveValue(MenuMain);
     }
 
     function activateDessert() {
         setDessertActive(true);
         setStarterActive(false);
         setMainActive(false);
-        setActiveValue('dessert');
+        setActiveValue(MenuDessert);
     }
     var BgColorMain = {};
     var BgColorStarter = {};
@@ -56,12 +54,12 @@ const Menu = (props) => {
                 <MenuWrapper>
                     <ButtonsWrapper>
                         <MenuButton active={BgColorStarter} func={activateStarter} name={'starter'}></MenuButton>
-                        <MenuButton active={BgColorMain} func={activateMain} name={'mains'}></MenuButton>
+                        <MenuButton active={BgColorMain} func={activateMain} name={'main'}></MenuButton>
                         <MenuButton active={BgColorDessert} func={activateDessert} name={'dessert'}></MenuButton>
                     </ButtonsWrapper>
                     <MenuItemWrapper>
 
-                        {Data.filter(x => x.menus === activeValue).map((data) => (
+                        {activeValue.map((data) => (
                             <MenuItemDiv key={data.id}>
                                 <MenuItem >
                                     <ItemHeader>{data.itemName}</ItemHeader>
