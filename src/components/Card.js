@@ -1,104 +1,93 @@
-import React from 'react'
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
 
 const Card = ({ headerTitle, personName, img, review }) => {
-    return (
-        <>
-            <CardDiv>
-                <CardHeaderDiv>
-                    <CardTitleWrapper>
-                        <h1>{headerTitle}</h1>
-                        <h3>{personName}</h3>
-                    </CardTitleWrapper>
-                    <CardImg img={img} />
-                </CardHeaderDiv>
-                <CardP>{review}
-                </CardP>
-            </CardDiv>
-        </>
-    )
-}
+  return (
+    <>
+      <CardDiv>
+        <CardHeaderDiv>
+          <CardTitleWrapper>
+            <h1>{headerTitle}</h1>
+            <h3>{personName}</h3>
+          </CardTitleWrapper>
+          <CardImg img={img} />
+        </CardHeaderDiv>
+        <CardP>{review}</CardP>
+      </CardDiv>
+    </>
+  );
+};
 
-export default Card
-
+export default Card;
 
 const CardDiv = styled.div`
-width:30% ;
-min-height: 300px;
-${'' /* border:1px solid; */}
-background-color: rgba(0,0,0,0.85);
-border-color: #efebdf;
-border-radius: 5px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  width: 30%;
+  min-height: 300px;
+  ${"" /* border:1px solid; */}
+  background-color: rgba(0,0,0,0.85);
+  border-color: #efebdf;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-padding: 50px;
+  padding: 50px;
 
-@media screen and (max-width: 1450px){
+  @media screen and (max-width: 1450px) {
     padding: 30px;
-}
-@media screen and (max-width:1000px){
-    width:70%;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 70%;
     padding: 30px;
     margin-bottom: 20px;
-}
-@media screen and (max-width:768px){
-    width:90%;
-    
-}
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 const CardHeaderDiv = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
 
-
-
-h1{
+  h1 {
     color: #fff;
-    font-size:22px ;
+    font-size: 22px;
     max-width: 200px;
-}
-h3{
+  }
+  h3 {
     color: rgb(1, 191, 113);
     font-size: 14px;
     margin-top: 10px;
-}
+  }
 
-
-/* @media screen and (max-width: 1200px){
+  /* @media screen and (max-width: 1200px){
     flex-direction: column-reverse;
 } */
 `;
 
 const CardTitleWrapper = styled.div`
-display: flex;
-flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
 `;
 
 const CardImg = styled.div`
-width: 100px;
-height:100px;
-background-image: url(${props => props.img});
-background-size: cover;
-border-radius:50%;
+  width: 100px;
+  height: 100px;
+  background-image: url(${(props) => props.img});
+  background-size: cover;
+  border-radius: 50%;
 
-
-@media screen and (max-width:1200px){
+  @media screen and (max-width: 1200px) {
     width: 70px;
-    height:70px;
-}
+    height: 70px;
+  }
 `;
 
 const CardP = styled.p`
-color: #fff;
-font-weight:400;
-margin-top: 30px;
-line-height: 1.8;
-
+  color: #fff;
+  font-weight: 400;
+  margin-top: 30px;
+  line-height: 1.8;
 `;

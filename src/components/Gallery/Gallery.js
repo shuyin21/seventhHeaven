@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Tilt from "react-tilt";
-import Banana from "../../images/GalleryImages/banana.jpg";
-import Blueberry from "../../images/GalleryImages/blueberrys.jpg";
-import cake from "../../images/GalleryImages/cake.jpg";
-import crepe from "../../images/GalleryImages/crepe.jpg";
-import iceCream from "../../images/GalleryImages/iceCream.jpg";
-import oreo from "../../images/GalleryImages/oreo.jpg";
-import salad from "../../images/GalleryImages/salad.jpg";
-import waffle from "../../images/GalleryImages/waffle.jpg";
+import arancini from "../../images/arancini.jpg";
+import pannacotta from "../../images/pannacotta.jpg";
+import tiramisu from "../../images/tiramisu.jpg";
+import fettucine from "../../images/fettucine.jpg";
+import risotto from "../../images/risotto.jpg";
+import burrata from "../../images/burrata.jpg";
+import lamp from "../../images/lamp.jpg";
+import pudding from "../../images/breadpudding.jpg";
 
 const Gallery = () => {
   return (
@@ -16,28 +16,28 @@ const Gallery = () => {
       <GalleryContainer>
         <GalleryWrapper>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={Banana} />
+            <ImgHolder src={arancini} />
           </Tilt>
           <Tilt className="Tilt" options={tiltOptions} style={style}>
-            <ImgHolder src={Blueberry} />
+            <ImgHolder src={pannacotta} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={cake} />
+            <ImgHolder src={tiramisu} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={crepe} />
+            <ImgHolder src={fettucine} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={iceCream} />
+            <ImgHolder src={risotto} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={oreo} />
+            <ImgHolder src={burrata} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={salad} />
+            <ImgHolder src={lamp} />
           </Tilt>
           <Tilt className="Tilt " options={tiltOptions} style={style}>
-            <ImgHolder src={waffle} />
+            <ImgHolder src={pudding} />
           </Tilt>
         </GalleryWrapper>
       </GalleryContainer>
