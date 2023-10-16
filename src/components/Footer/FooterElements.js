@@ -36,11 +36,11 @@ display:flex;
 
 export const FooterLinkItems = styled.div`
 display:flex;
-flex-direction: column;
+${'' /* flex-direction: column; */}
 align-items: flex-start;
 margin: 16px;
 text-align:left;
-width:160px;
+width:100%;
 box-sizing:border-box;
 color:#fff;
 

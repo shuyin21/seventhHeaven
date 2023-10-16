@@ -26,8 +26,8 @@ export default Card
 const CardDiv = styled.div`
 width:30% ;
 min-height: 300px;
-border:1px solid;
-background-color: #060816;
+${'' /* border:1px solid; */}
+background-color: rgba(0,0,0,0.85);
 border-color: #efebdf;
 border-radius: 5px;
 display: flex;
@@ -63,7 +63,7 @@ h1{
     max-width: 200px;
 }
 h3{
-    color: #8e2427;
+    color: rgb(1, 191, 113);
     font-size: 14px;
     margin-top: 10px;
 }
@@ -96,8 +96,8 @@ border-radius:50%;
 `;
 
 const CardP = styled.p`
-color: #ffffffb0;
-font-weight:600;
+color: #fff;
+font-weight:400;
 margin-top: 30px;
 line-height: 1.8;
 

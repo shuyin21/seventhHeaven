@@ -6,7 +6,7 @@ export const testimonialsOne = {
     headerTitle: "Coffee and Cake",
     personName: "Lucy L.",
     img: require('../../images/women-2.jpg').default,
-    review: "Delicious food, gorgeously presented and super sweet staff. The owner and waitresses were absolutely lovely, and contributed to a very nice atmosphere 🙂 Ordered a crepe, muille fille & a Ferrero Roche milkshake~ and it was all delicious! I’d definitely recommend a visit to this little gem~ just around the corner from Selfridges",
+    review: "Delicious food, beautifully presented, and with a wonderfully friendly staff. The owner and waitresses were absolutely lovely, contributing to a delightful atmosphere. I ordered a crepe, a mille-feuille, and a Ferrero Rocher milkshake, and they were all scrumptious! I would highly recommend paying a visit to this hidden gem, conveniently located just around the corner from Selfridges.",
 
 }
 
@@ -14,12 +14,12 @@ export const testimonialsTwo = {
     headerTitle: "Absolutely amazing!",
     personName: "Noellu L. - Google",
     img: require('../../images/women-1.jpg').default,
-    review: "Out in London to celebrate a friend's birthday with shopping on Oxford Street. We decided to stop and have coffee and cake and came across Kula. I must say the cinnamon pastry that I had was to die for. They warmed it up which made it even nicer. The pastry’s are fairly big though so could have had one between two. Five of us had a hot drink and three of us had a pastry and it came to 27.00 which I thought was very reasonable for London. I would highly recommend a visit",
+    review: "I was out in London to celebrate a friend's birthday while doing some shopping on Oxford Street. We decided to take a break and enjoy some coffee and cake, and that's when we stumbled upon Kula. I have to say, the cinnamon pastry I ordered was absolutely heavenly. They even warmed it up, which made it even more delightful. The pastries are quite generous in size, so one could easily be shared between two people. Five of us had hot drinks, and three of us indulged in pastries, and the total bill came to £27.00, which I found to be very reasonable for London. I highly recommend paying them a visit.",
 }
 
 export const testimonialsThree = {
     headerTitle: "One of my favourite coffee shops",
     personName: "Michael F.",
     img: require('../../images/men-1.jpg').default,
-    review: "The cafe also offers a vide variety of juices, coffees, smoothies and more. We tried many different breakfasts from the menu. Such as full English breakfast, pancakes with fresh fruits and Nutella, omelettes and avocado toast with poached eggs. All was very good.",
+    review: "The cafe also offers a wide variety of juices, coffees, smoothies, and more. We tried various breakfast options from the menu, including the full English breakfast, pancakes with fresh fruits and Nutella, omelettes, and avocado toast with poached eggs. Everything was delicious.",
 }
