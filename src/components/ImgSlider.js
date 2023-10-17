@@ -3,9 +3,9 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import tiramisu from "../images/tiramisu.jpg";
+import burrata from "../images/burrata.jpg";
 import fettucine from "../images/fettucine.jpg";
-import arancini from "../images/arancini.jpg";
+import tiramisu from "../images/tiramisu.jpg";
 
 const ImgSlider = (props) => {
   let settings = {
@@ -24,7 +24,7 @@ const ImgSlider = (props) => {
     <Carousel {...settings}>
       <Wrap>
         <ImgHolder>
-          <Img src={arancini} />
+          <Img src={tiramisu} />
         </ImgHolder>
       </Wrap>
       <Wrap>
@@ -34,7 +34,7 @@ const ImgSlider = (props) => {
       </Wrap>
       <Wrap>
         <ImgHolder>
-          <Img src={tiramisu} />
+          <Img src={burrata} />
         </ImgHolder>
       </Wrap>
     </Carousel>
@@ -44,19 +44,17 @@ const ImgSlider = (props) => {
 export default ImgSlider;
 
 const Carousel = styled(Slider)`
-  margin-top: 0px;
-  position: relative;
+  margin-top: 20px;
 `;
 
 const Wrap = styled.div`
+  width: 100%;
   border-radius: 4px;
   cursor: pointer;
-  position: relative;
   margin-bottom: 20px;
 
   @media screen and(max-width: 500px) {
     height: 100%;
-    width: 100%;
   }
 
   &:hover {
@@ -67,12 +65,9 @@ const Wrap = styled.div`
 `;
 
 const ImgHolder = styled.div`
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  padding: 4px;
+  width: 100%;
   height: 100%;
+  border-radius: 4px;
 `;
 
 const Img = styled.img`
